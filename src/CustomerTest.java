@@ -12,7 +12,7 @@ public class CustomerTest {
     @Test
     public void addRental() throws Exception {
         customer.addRental(r);
-        assertEquals(customer.statement(), "Rental Record for " + this.customer.getName() + "\n\tTitle\t\tDays\tAmount\n\t" + this.m.getTitle() + "\t\t30\t0.0\nAmount owed is 0.0\nYou earned 1 frequent renter points");
+        assertEquals(customer.statement(), "Rental Record for " + customer.getName() + "\n\tTitle\t\tDays\tAmount\n\t" + m.getTitle() + "\t\t30\t0.0\nAmount owed is 0.0\nYou earned 1 frequent renter points");
     }
 
     @Test
@@ -23,7 +23,7 @@ public class CustomerTest {
     @Test
     public void statement() throws Exception {
         customer.addRental(r);
-        assertEquals(customer.statement(), "Rental Record for " + this.customer.getName() + "\n\tTitle\t\tDays\tAmount\n\t" + m.getTitle() + "\t\t30\t0.0\nAmount owed is 0.0\nYou earned 1 frequent renter points");
+        assertEquals(customer.statement(), "Rental Record for " + customer.getName() + "\n\tTitle\t\tDays\tAmount\n\t" + m.getTitle() + "\t\t30\t0.0\nAmount owed is 0.0\nYou earned 1 frequent renter points");
     }
 
 }
