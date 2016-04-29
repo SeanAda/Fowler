@@ -6,7 +6,7 @@ public class CustomerTest {
 
 	final String name = "Hans Peter";
 	Customer customer = new Customer(name);
-    Movie m = new Movie("Testfilm", 123);
+    Movie m = new Movie("Testfilm", 1);
     Rental r = new Rental(m, 30);
 
     @Test
